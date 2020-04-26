@@ -3,7 +3,7 @@
 
 		<div v-for="item in nameList">
 			<span>{{item.name}}</span>
-			<span>{{item.description}}</span>
+			<span>{{item.nick}}</span>
 		</div>
 		我的界面
 	</div>
@@ -18,17 +18,19 @@
 <script>
 	export default {
 		data() {
-			return {
-				nameList: []
+                return {
+                    nameList: []
 			}
 		},
 		created() {
-			   this.$http.get('/api/seller').then((response) => {
+			   this.$http.get('/api/test.json').then((response) => {
 
 				console.log(response.data)
 				//响应正确回调
-				this.nameList = response.body; //把数据存放到data中
-			})
+				this.nameList = response.data.first; //把数据存放到data中
+			}).catch(err => {
+
+               })
 		}
 
 	}
