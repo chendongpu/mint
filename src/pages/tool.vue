@@ -1,6 +1,7 @@
 <template>
   <div id="index">
     这里是应用中心
+    <mt-button size="large" @click="go">测试跳转</mt-button>
   </div>
 </template>
 <style scoped>
@@ -11,5 +12,11 @@
   }
 </style>
 <script>
-  export default{}
+  export default{
+      methods: {
+          go() {
+              this.$router.push('/fa');//要跳转的界面
+          }
+      }
+  }
 </script>

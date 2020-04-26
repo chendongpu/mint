@@ -5,6 +5,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Main from "../pages/main.vue"
 import Tool from "../pages/tool.vue"
 import My from "../pages/my.vue"
+import Fa from '../pages/fa.vue'
 
 Vue.use(Router)
 
@@ -25,6 +26,9 @@ export default new Router({
       {
           path: '/my',
           component: My
+      },
+      {
+          path: '/fa', component: Fa
       }
   ]
 })
