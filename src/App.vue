@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-   <mt-button @click.native="handleClick">按钮</mt-button>
-
+      <div class="content-div">
+          <router-view/>
+      </div>
+      <footer-bar class="footer"></footer-bar>
   </div>
 </template>
 
 <script>
+    import Footer from './components/FooterBar.vue'
 export default {
   el: '#app',
-  methods: {
-    handleClick:function(){
-      this.$toast('Hello world!');
-    }
-  }
+    components: {
+        'footer-bar': Footer
+    },
 }
 </script>
 

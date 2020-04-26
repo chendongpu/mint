@@ -2,14 +2,29 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 
+import Main from "../pages/main.vue"
+import Tool from "../pages/tool.vue"
+import My from "../pages/my.vue"
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
+      component: Main
+    },
+      {
+          path: '/main',
+          component: Main
+      },
+      {
+          path: '/tool',
+          component: Tool
+      },
+      {
+          path: '/my',
+          component: My
+      }
   ]
 })
