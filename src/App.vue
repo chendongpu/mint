@@ -1,7 +1,7 @@
 <template>
   <div id="app">
    <mt-button @click.native="handleClick">按钮</mt-button>
-    
+
   </div>
 </template>
 
