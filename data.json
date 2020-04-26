@@ -1,0 +1,15 @@
+{
+  "seller": {
+    "name": "我是隔壁老王",
+    "description": "隔壁老王",
+    "supports": [
+      {
+        "type": 0,
+        "description": "每日睡到自然醒"
+      }, {
+        "type": 1,
+        "description": "80后的大帅哥"
+      }
+    ]
+  }
+}
